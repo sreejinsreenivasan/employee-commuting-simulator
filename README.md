@@ -1,28 +1,29 @@
-# Full Stack Coding Exercise
+# Full Stack Developer Coding Exercise - Employee Commuting Simulator
 
-Employee Commuting Simulator - estimate the carbon emission associated with a different commuting options.
+Employee Commuting Simulator - estimate the carbon emissions associated with a different commuting options.
 
 ## Task
 
-Implement a simple UI for an employee commuting simulator using Typescript, React, React Router and Ant Design.
+Your task is to implement a simple UI for an employee commuting simulator using Typescript, React, React Router and Ant Design.
 
-![](./docs/images/starting_point.png)
+_User Story:_ As a user, I want to explore different options for traveling to work so that I understand the impacts of my choices.
+
+Here is the starting point for the frontend: ![](./docs/images/starting_point.png)
 
 A basic python API is provided in [](./backend/app.py) which you will use from the frontend to simulate carbon emissions. See API documentation below.
 
 Your solution should:
 
-* Provide a simple, clear form input to change simulation parameters
-* Provide an empty state for when you first navigate to the page and no parameters are specified
-* Provide a chart / visualisation of the "total_kg_co2e" by commute mode (see `SimulationResult.total_kg_co2e_per_mode` in [./backend/app.py](./backend/app.py))
-* Provide a chart / visualisation of the overall "total_kg_co2e" (see [./backend/app.py](./backend/app.py))
-* Gracefully handle slow API responses
+__Simulation Input__
 
+* Provide a simple, clear form input to change simulation parameters (see the `Scenario` data type and `simulate` API endpoint in [./backend/app.py](./backend/app.py) to understand the possible inputs / parameters)
+* Call the http api at http://localhost:5000/simulate to simulate a given scenario.
 
-### User Story
+__Simulation Output__
 
-_User Story:_ As a user, I want to explore different options for traveling to work so that I understand the impacts of my choices.
-
+* Provide a visualisation of the overall `total_kg_co2e` (see `SimulationResults.total_kg_co2e` in [./backend/app.py](./backend/app.py)) for a given `SimulationResult`. Ant Design's `Statistic` component might be a good option.
+* Provide a bar chart showing the the "total_kg_co2e" by commute mode (see `SimulationResult.total_kg_co2e_per_mode` in [./backend/app.py](./backend/app.py)) for a simulation result. https://echarts.apache.org/en/index.html or https://react-chartjs-2.js.org/ may be a good option.
+* Provide a description / visualisationof the Scenario that was simulated (See `SimulationResult.scenario`)
 
 ## Dev Setup
 

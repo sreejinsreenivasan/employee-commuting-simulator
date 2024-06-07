@@ -2,6 +2,7 @@ from flask import Flask, abort, request
 from dataclasses import dataclass, asdict
 from enum import Enum
 import json
+from flask_cors import CORS
 
 
 class CommuteMode(str, Enum):
@@ -91,6 +92,8 @@ def simulate_commute(scenario: Scenario) -> SimulationResult:
 
 
 app = Flask(__name__)
+
+CORS(app)
 
 
 @app.route("/")
