@@ -8,7 +8,7 @@ Your task is to implement a simple UI for an employee commuting simulator using 
 
 _User Story:_ As a user, I want to explore different options for traveling to work so that I understand the impacts of my choices.
 
-Here is the starting point for the frontend: ![](./docs/images/starting_point.png)
+Here is the starting point for the frontend in [./frontend/src/pages/simulator.tsx](./frontend/src/pages/simulator.tsx): ![](./docs/images/starting_point.png)
 
 A basic python API is provided in [](./backend/app.py) which you will use from the frontend to simulate carbon emissions. See API documentation below.
 
