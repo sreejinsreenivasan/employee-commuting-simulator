@@ -1,6 +1,6 @@
 fileignoreconfig:
 - filename: frontend/package-lock.json
-  checksum: da6e652b1b1af514b0341d64a9e43e8be7f3eba2e42090b7f684c57a470abfa0
+  checksum: 6bab23d2ec24927278bae6ca5a0254d0c2ce210bf299d484a4bae5883aa38449
 - filename: frontend/public/vite.svg
   checksum: 22166aa3fbc85c82b67058e2d22b18203af7f31176943f9424fb7e1cdb1ffb09
 - filename: frontend/src/vite-env.d.ts
