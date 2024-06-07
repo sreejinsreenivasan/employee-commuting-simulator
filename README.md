@@ -47,7 +47,7 @@ nvm use <version>
 cd frontend/
 npm install
 
-# run the frontend server on port 5174
+# run the frontend server on port 5173
 npm run dev
 
 ```
